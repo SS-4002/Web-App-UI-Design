@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Stock Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>My Stocks</h1>
+        <input type="search" placeholder="Search stocks">
+        <p>Hi, User</p>
+    </header>
+
+    <!-- Left Sidebar -->
+    <div class="layout">
+        <nav class="sidebar">
+            <a href="#">Home</a>
+
+            <details open>
+                <summary>My Account</summary>
+                <a href="#">Info</a>
+                <a href="#">Watchlist</a>
+            </details>
+
+            <details>
+                <summary>Research</summary>
+                <a href="#">Company News</a>
+                <a href="#">Reports</a>
+            </details>
+
+            <a href="#">Settings</a>
+        </nav>
+
+        <!-- Main -->
+        <main>
+            <h2>Dashboard</h2>
+            <p class="intro"></p>
+
+            <section class="summary">
+                <article>
+                    <h3>Portfolio</h3>
+                    <p>£8,420</p>
+                </article>
+
+                <article>
+                    <h3>Today's change</h3>
+                    <p class="green">+1.6%</p>
+                </article>
+
+                <article>
+                    <h3>Watchlist</h3>
+                    <p>5 stocks</p>
+                </article>
+            </section>
+
+            <section class="panel">
+                <h2>My Watchlist</h2>
+
+                <div class="table-scroll">
+                    <table>
+                        <tr>
+                            <th>Company</th>
+                            <th>Price</th>
+                            <th>Change</th>
+                        </tr>
+                        <tr>
+                            <td>Northstar</td>
+                            <td>£42.10</td>
+                            <td class="green">+2.1%</td>
+                        </tr>
+                        <tr>
+                            <td>Green Energy</td>
+                            <td>£18.75</td>
+                            <td class="red">−0.8%</td>
+                        </tr>
+                        <tr>
+                            <td>Bright Tech</td>
+                            <td>£63.20</td>
+                            <td class="green">+1.2%</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section class="panel news">
+                <h2>Market News</h2>
+                <p><strong>Energy shares rise</strong> after a busy week in the market.</p>
+                <p><strong>Technology sector</strong> sees mixed results today.</p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

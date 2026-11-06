@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #253238;
+    background-color: #f3f6f5;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 25px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    margin: 0;
+    color: #176b58;
+    font-size: 22px;
+}
+
+header input {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+}
+
+/* Left Sidebar Styling */
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    padding: 20px 12px;
+    background-color: #203b4a;
+}
+
+.sidebar a,
+.sidebar summary {
+    display: block;
+    padding: 11px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sidebar details a {
+    padding-left: 28px;
+    color: #c8d8dc;
+    font-size: 14px;
+}
+
+/* Main Styling */
+main {
+    flex: 1;
+    padding: 25px;
+}
+
+main > h2 {
+    margin-bottom: 4px;
+}
+
+.intro {
+    margin-top: 0;
+    color: #68777a;
+}
+
+.summary {
+    display: flex;
+    gap: 15px;
+    margin: 22px 0;
+}
+
+.summary article,
+.panel {
+    padding: 16px;
+    background-color: white;
+    border: 1px solid #d9e1de;
+    border-radius: 8px;
+}
+
+.summary article {
+    flex: 1;
+}
+
+.summary h3 {
+    margin: 0;
+    color: #68777a;
+    font-size: 14px;
+}
+
+.summary article p {
+    margin-bottom: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.green {
+    color: #17804e;
+}
+
+.red {
+    color: #b34545;
+}
+
+.panel {
+    margin-bottom: 18px;
+}
+
+.panel h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 12px 8px;
+    border-bottom: 1px solid #e4e8e6;
+}
+
+.news p {
+    padding: 10px 0;
+    border-bottom: 1px solid #e4e8e6;
+}
+
+@media (max-width: 650px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    header input {
+        order: 3;
+        width: 100%;
+    }
+
+    .layout {
+        display: block;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .sidebar a,
+    .sidebar summary {
+        display: inline-block;
+    }
+
+    main {
+        padding: 16px;
+    }
+
+    .summary {
+        flex-direction: column;
+    }
+
+    .table-scroll {
+        overflow-x: auto;
+    }
+}
